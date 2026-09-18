@@ -1,5 +1,11 @@
 :root {
-    --color-primary: #FF4646;
+    --color-background: #E1D4C9;
+    --color-accent: #B0907A;
+    --color-text-primary: #403F3D;
+    --color-border-primary: #C1B6AD;
+    --color-border-inverse: #665F55;
+
+    --font-main: "Inter", sans-serif;
 }
 
 *,
@@ -20,7 +26,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--font-main);
-  background-color: var(--color-white);
+  background-color: var(--color-background);
 }
 
 h1 {

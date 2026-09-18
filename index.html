@@ -2,19 +2,73 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <link rel="icon" href="favicon.ico" />
-
-  <title>Coffee House</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico" />
+    <title>Coffee House</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="container header__container">
+            <a class="logo" href="#">
+                <img class="logo__img" src="./assets/icons/logo.svg" alt="Coffee House logo">
+            </a>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#favorite">
+                            Favorite coffee
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#about">
+                            About
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#mobile-app">
+                            Mobile app
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#contact">
+                            Contact us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <div class="theme-switcher">
+                    <button class="theme-switcher__button theme-switcher__button--active">
+                        <img class="theme-switcher__icon" src="./assets/icons/sun.svg" alt="Sun icon">
+                    </button>
 
+                    <button class="theme-switcher__button theme-switcher__button--inactive">
+                        <img class="theme-switcher__icon" src="./assets/icons/moon.svg" alt="Moon icon">
+                    </button>
+                </div>
+                <button class="burger header__burger">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+                <a class="menu-link" href="#menu">
+                    <span>Menu</span>
+                    <img class="menu__icon" src="./assets/icons/coffee-cup.svg" alt="Coffee cup icon">
+                </a>
+            </div>
+        </div>
+    </header>
 </body>
 
 </html>
