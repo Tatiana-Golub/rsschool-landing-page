@@ -84,3 +84,61 @@
 .menu-link {
   display: none;
 }
+
+/* ================= MAIN PAGE ================= */
+.hero__container {
+  border-radius: 40px;
+  background: url("../assets/images/img-hero.png") center center/cover no-repeat;
+  display: flex;
+}
+
+.hero__content {
+  max-width: clamp(19.75rem, 6.651rem + 55.155vw, 33.125rem);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  margin-block: clamp(3.75rem, 1.302rem + 10.309vw, 6.25rem);
+  margin-inline: clamp(1rem, -1.693rem + 11.34vw, 3.75rem);
+}
+
+.hero__title {
+  color: var(--color-background);
+  font-size: clamp(2.625rem, 0.789rem + 7.732vw, 4.5rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+}
+
+.accent {
+  color: var(--color-accent);
+  font-style: italic;
+}
+
+.hero__description {
+  color: var(--color-background);
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.hero__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 200px;
+  padding-block: 20px;
+  border-radius: 100px;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.hero__button:hover {
+  background-color: var(--color-accent);
+  color: var(--color-background);
+}
+

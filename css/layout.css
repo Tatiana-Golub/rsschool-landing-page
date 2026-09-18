@@ -21,4 +21,5 @@
   max-width: 1440px;
   margin-inline: auto;
   width: 100%;
+  padding-inline: clamp(1rem, -0.469rem + 6.186vw, 2.5rem);
 }
