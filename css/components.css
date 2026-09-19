@@ -135,10 +135,111 @@
   text-align: center;
   font-weight: 600;
   line-height: 1.5;
+  cursor: pointer;
 }
 
-.hero__button:hover {
-  background-color: var(--color-accent);
-  color: var(--color-background);
+.slider {
+  padding: 100px 0;
 }
 
+.slider__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  color: var(--color-text-primary);
+}
+
+.section-title {
+  color: var(--color-text-primary);
+  text-align: start;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+
+.slider__title {
+  text-align: center;
+}
+
+.slider__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.slider__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.slider__button {
+  display: none;
+}
+
+.coffee-card {
+  width: 480px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.coffee-card__image-wrapper {
+  max-width: 480px;
+}
+
+.coffee-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.coffee-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.coffee-card__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.coffee-card__description {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.coffee-card__price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.slider__pagination {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.slider__dot {
+  width: 40px;
+  height: 4px;
+  border-radius: 100px;
+  border: none;
+  background-color: var(--color-border-primary);
+}
+
+.slider__dot--active {
+  background-color: var(--color-border-inverse);
+}
