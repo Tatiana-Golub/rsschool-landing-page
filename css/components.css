@@ -287,3 +287,79 @@
 .gallery__image:hover {
   transform: scale(0.9);
 }
+
+.mobile-app {
+  padding: 100px 0;
+}
+
+.mobile-app__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(2.5rem, -1.173rem + 15.464vw, 6.25rem);
+}
+
+.mobile-app__content {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.mobile-app__description {
+  color: var(--color-text-primary);
+  line-height: 1.5;
+  letter-spacing: 0.005rem;
+}
+
+.app-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.app-button {
+  width: 200px;
+  min-height: 64px;
+  padding: 12px 20px;
+  border: 1px solid var(--color-border-inverse);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.app-button:hover {
+  background-color: var(--color-border-inverse);
+  color: var(--color-background);
+}
+
+.button-lable {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.button-text--small {
+  font-size: 0.6rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.mobile-app__image {
+  max-width: 630px;
+  width: 100%;
+  flex-shrink: 0;
+}

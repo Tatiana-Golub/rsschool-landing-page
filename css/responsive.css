@@ -45,6 +45,10 @@
         background: var(--color-border-inverse);
         color: var(--color-background);
     }
+
+    .app-buttons {
+        flex-direction: row;
+    }
 }
 
 @media (min-width: 810px) {
@@ -105,5 +109,9 @@
 
     .hero__button:hover .hero__cup-icon {
         display: block;
+    }
+
+    .mobile-app__container {
+        flex-direction: row;
     }
 }
