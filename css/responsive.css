@@ -3,14 +3,6 @@
         margin-left: 2.75rem;
     }
 
-    .hero__cup-icon {
-        display: none;
-    }
-
-    .hero__button:hover .hero__cup-icon {
-        display: flex;
-    }
-
     .hero__content {
         margin-inline: clamp(3.75rem, 0.893rem + 5.952vw, 6.25rem);
     }
@@ -55,6 +47,21 @@
     }
 }
 
+@media (min-width: 810px) {
+    .gallery {
+        flex-direction: row;
+    }
+
+    .gallery__column {
+        width: calc((100% - 40px) / 2);
+    }
+
+    .gallery__image--small {
+        display: block;
+        height: 430px;
+    }
+}
+
 @media (min-width: 960px) {
     .navigation__list {
         display: flex;
@@ -88,5 +95,15 @@
     .menu__cup-icon {
         width: 20px;
         height: 20px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero__cup-icon {
+        display: none;
+    }
+
+    .hero__button:hover .hero__cup-icon {
+        display: block;
     }
 }
