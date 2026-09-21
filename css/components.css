@@ -542,6 +542,7 @@
   font-weight: 600;
   line-height: 1.5;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .category-button__content {
@@ -561,12 +562,14 @@
   height: 30px;
 }
 
-.category-button--active {
+.category-button--active,
+.category-button:hover {
   background-color: var(--color-background-container);
   color: var(--color-text-inverse);
 }
 
-.category-button--active .icon-wrapper {
+.category-button--active .icon-wrapper,
+.category-button:hover .icon-wrapper {
   background-color: var(--color-background-page);
 }
 
