@@ -4,13 +4,13 @@
   flex-shrink: 0;
 }
 
-.logo__img {
-  width: 100px;
-  height: auto;
+.logo svg {
+  color: var(--color-text-primary);
 }
 
 .navigation__list {
   display: none;
+  color: var(--color-text-primary);
 }
 
 .navigation__link {
@@ -54,20 +54,42 @@
   justify-content: center;
   border-radius: 50%;
   border: none;
-}
-
-.theme-switcher__button--active {
-  color: var(--color-background);
-  background-color: var(--color-accent);
-}
-
-.theme-switcher__button--inactive {
   color: var(--color-text-primary);
-  background: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
-.theme-switcher:hover {
-  transform: scale(1.05);
+.theme-switcher__button--sun {
+    color: var(--color-text-inverse);
+    background-color: var(--color-text-accent);
+}
+
+.theme-switcher__button--moon {
+    color: var(--color-text-primary);
+    background-color: transparent;
+}
+
+.theme-switcher__button--moon:hover {
+    color: var(--color-text-inverse);
+    background-color: var(--color-border-inverse);
+}
+
+:root[theme='dark'] .theme-switcher__button--sun {
+    color: var(--color-text-primary);
+    background-color: transparent;
+}
+
+:root[theme='dark'] .theme-switcher__button--moon {
+    color: var(--color-text-inverse);
+    background-color: var(--color-text-accent);
+}
+
+:root[theme='dark'] .theme-switcher__button--sun:hover {
+    color: var(--color-text-primary);
+    background-color: var(--color-background-container);
 }
 
 .burger {
@@ -87,7 +109,7 @@
 .burger__line {
   width: 16px;
   height: 2px;
-  background-color: var(--color-border-inverse);
+  background-color: var(--color-text-primary);
 }
 
 .menu-link {
@@ -112,7 +134,7 @@
 }
 
 .hero__title {
-  color: var(--color-background);
+  color: var(--color-text-inverse);
   font-size: clamp(2.625rem, 0.789rem + 7.732vw, 4.5rem);
   font-weight: 600;
   line-height: 1.15;
@@ -120,12 +142,12 @@
 }
 
 .accent {
-  color: var(--color-accent);
+  color: var(--color-text-accent);
   font-style: italic;
 }
 
 .hero__description {
-  color: var(--color-background);
+  color: var(--color-text-inverse);
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;
@@ -137,9 +159,10 @@
   align-items: center;
   gap: 8px;
   width: 200px;
+  height: 64px;
   padding-block: 20px;
   border-radius: 100px;
-  background-color: var(--color-background);
+  background-color: var(--color-background-page);
   color: var(--color-text-primary);
   text-align: center;
   font-weight: 600;
@@ -348,8 +371,8 @@
 }
 
 .app-button:hover {
-  background-color: var(--color-border-inverse);
-  color: var(--color-background);
+  background-color: var(--color-background-container);
+  color: var(--color-text-inverse);
 }
 
 .button-lable {
@@ -383,7 +406,7 @@
 
 .footer__title,
 .footer__subtitle {
-  color: var(--color-background);
+  color: var(--color-text-inverse);
   text-align: start;
   font-size: 2rem;
   font-weight: 600;
@@ -392,7 +415,7 @@
 }
 
 .footer__subtitle {
-  color: var(--color-accent);
+  color: var(--color-text-accent);
   font-style: italic;
 }
 
@@ -415,8 +438,8 @@
 }
 
 .socials__link:hover {
-  background-color: var(--color-background);
-  color: var(--color-border-inverse);
+  background-color: var(--color-background-page);
+  color: var(--color-text-primary);
 }
 
 .footer__contacts {
@@ -452,7 +475,7 @@
 }
 
 .contacts-item--link:hover {
-  border-color: var(--color-background);
+  border-color: var(--color-text-inverse);
 }
 
 .contacts-icon {
@@ -521,12 +544,12 @@
 }
 
 .category-button--active {
-  background-color: var(--color-border-inverse);
-  color: var(--color-background);
+  background-color: var(--color-background-container);
+  color: var(--color-text-inverse);
 }
 
 .category-button--active .icon-wrapper {
-  background-color: var(--color-background);
+  background-color: var(--color-background-page);
 }
 
 .menu__grid {
@@ -542,7 +565,6 @@
   flex-direction: column;
   width: 310px;
   height: 506px;
-  /* overflow: hidden; */
   border: 1px solid var(--color-border-primary);
   border-radius: 40px;
   color: var(--color-text-primary);

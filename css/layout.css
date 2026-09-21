@@ -34,8 +34,8 @@
   flex-direction: column;
   justify-content: center;
   gap: clamp(2.5rem, -1.173rem + 15.464vw, 6.25rem);
-  background-color: var(--color-border-inverse);
-  color: var(--color-background);
+  background-color: var(--color-background-container);
+  color: var(--color-text-inverse);
   border-radius: 40px;
   max-width: 1440px;
   padding-block: clamp(3.75rem, 2.854rem + 3.774vw, 6.25rem); 

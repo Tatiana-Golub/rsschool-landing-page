@@ -44,8 +44,8 @@
     }
 
     .slider__button:hover {
-        background: var(--color-border-inverse);
-        color: var(--color-background);
+        background: var(--color-background-container);
+        color: var(--color-text-inverse);
     }
 
     .app-buttons {
@@ -106,6 +106,7 @@
         align-items: center;
         gap: 8px;
         height: 28px;
+        color: var(--color-text-primary);
         font-weight: 600;
         border-bottom: 2px solid transparent;
         transition: border-color 0.3s ease;
@@ -119,6 +120,7 @@
     .menu__cup-icon {
         width: 20px;
         height: 20px;
+        color: var(--color-text-primary);
     }
 }
 
