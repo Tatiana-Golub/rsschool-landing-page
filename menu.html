@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico" />
+    <title>Coffee House</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="container header__container">
+            <a class="logo" href="index.html">
+                <img class="logo__img" src="./assets/icons/logo.svg" alt="Coffee House logo">
+            </a>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="index.html#favorite">
+                            Favorite coffee
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="index.html#about">
+                            About
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="index.html#mobile-app">
+                            Mobile app
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#contacts">
+                            Contact us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <div class="theme-switcher">
+                    <button class="theme-switcher__button theme-switcher__button--active">
+                        <img class="theme-switcher__icon" src="./assets/icons/sun.svg" alt="Sun icon">
+                    </button>
+
+                    <button class="theme-switcher__button theme-switcher__button--inactive">
+                        <img class="theme-switcher__icon" src="./assets/icons/moon.svg" alt="Moon icon">
+                    </button>
+                </div>
+                <button class="burger header__burger">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+                <a class="menu-link menu__link--active" href="#menu">
+                    <span>Menu</span>
+                    <img class="menu__cup-icon" src="./assets/icons/coffee-cup.svg" alt="Coffee cup icon">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main class="main">
+
+        <!-- MENU -->
+
+        <section class="menu">
+            <div class="container menu__container">
+                <div class="menu__header">
+                    <h1 class="section-title menu__title">
+                        Behind each of our cups hides an
+                        <span class="accent">amazing surprise</span>
+                    </h1>
+                    <div class="menu__categories">
+                        <button class="category-button" type="button">
+                            <div class="category-button__content">
+                                <div class="icon-wrapper">
+                                    <img category-button__icon src="./assets/icons/coffee.png" alt="">
+                                </div>
+                                <span>Coffee</span>
+                            </div>
+                        </button>
+
+                        <button class="category-button category-button--active" type="button">
+                            <div class="category-button__content">
+                                <div class="icon-wrapper">
+                                    <img category-button__icon src="./assets/icons/tea.png" alt="">
+                                </div>
+                                <span>Tea</span>
+                            </div>
+                        </button>
+
+                        <button class="category-button" type="button">
+                            <div class="category-button__content">
+                                <div class="icon-wrapper">
+                                    <img category-button__icon src="./assets/icons/dessert.png" alt="">
+                                </div>
+                                <span>Dessert</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu__grid">
+                    <article class="menu-card">
+                        <img class="menu-card__image" src="./assets/images/tea-1.png" alt="Moroccan tea">
+                        <div class="menu-card__content">
+                            <div class="menu-card__info">
+                                <h2 class="menu-card__title">Moroccan</h2>
+                                <p class="menu-card__description">
+                                    Fragrant black tea with the addition of tangerine,
+                                    cinnamon, honey, lemon and mint
+                                </p>
+                            </div>
+                            <p class="menu-card__price">$4.50</p>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <img class="menu-card__image" src="./assets/images/tea-2.png" alt="Ginger tea">
+                        <div class="menu-card__content">
+                            <div class="menu-card__info">
+                                <h2 class="menu-card__title">Ginger</h2>
+                                <p class="menu-card__description">
+                                    Original black tea with fresh ginger,
+                                    lemon and honey
+                                </p>
+                            </div>
+                            <p class="menu-card__price">$5.00</p>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <img class="menu-card__image" src="./assets/images/tea-3.png" alt="Cranberry tea">
+                        <div class="menu-card__content">
+                            <div class="menu-card__info">
+                                <h2 class="menu-card__title">Cranberry</h2>
+                                <p class="menu-card__description">
+                                    Invigorating black tea with cranberry and honey
+                                </p>
+                            </div>
+                            <p class="menu-card__price">$5.00</p>
+                        </div>
+                    </article>
+                    <article class="menu-card">
+                        <div class="menu-card__image">
+                            <img class="menu-card__image" src="./assets/images/tea-4.png" alt="Sea buckthorn tea">
+                        </div>
+                        <div class="menu-card__content">
+                            <div class="menu-card__info">
+                                <h2 class="menu-card__title">Sea buckthorn</h2>
+                                <p class="menu-card__description">
+                                    Toning sweet black tea with sea buckthorn,
+                                    fresh thyme and cinnamon
+                                </p>
+                            </div>
+                            <p class="menu-card__price">$5.50</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer" id="contacts">
+        <div class="container footer__container">
+            <div class="footer__content">
+                <div class="title-wrapper">
+                    <p class="footer__title">
+                        Sip, Savor, Smile.
+                    </p>
+                    <p class="footer__subtitle">
+                        It's coffee time!
+                    </p>
+                </div>
+                <ul class="socials">
+                    <li>
+                        <a class="socials__link" href="#" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23 3.01006C23 3.01006 20.9821 4.20217 19.86 4.54006C19.2577 3.84757 18.4573 3.35675 17.567 3.13398C16.6767 2.91122 15.7395 2.96725 14.8821 3.29451C14.0247 3.62177 13.2884 4.20446 12.773 4.96377C12.2575 5.72309 11.9877 6.62239 12 7.54006V8.54006C10.2426 8.58562 8.50127 8.19587 6.93101 7.4055C5.36074 6.61513 4.01032 5.44869 3 4.01006C3 4.01006 -1 13.0101 8 17.0101C5.94053 18.408 3.48716 19.109 1 19.0101C10 24.0101 21 19.0101 21 7.51006C20.9991 7.23151 20.9723 6.95365 20.92 6.68006C21.9406 5.67355 23 3.01006 23 3.01006Z"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="socials__link" href="#" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"
+                                    stroke="currentColor" />
+                                <path d="M17.5 6.51L17.51 6.49889" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="socials__link" href="#" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__contacts">
+                <h2 class="contacts__title">
+                    Contact us
+                </h2>
+                <div class="contacts-list">
+                    <a class="contacts-item contacts-item--link" href="#">
+                        <img class="contacts-icon" src="./assets/icons/location.svg" alt="">
+                        <span>8558 Green Rd., LA</span>
+                    </a>
+                    <a class="contacts-item contacts-item--link" href="tel:+16035550123">
+                        <img class="contacts-icon" src="./assets/icons/phone.svg" alt="">
+                        <span>+1 (603) 555-0123</span>
+                    </a>
+                    <div class="contacts-item">
+                        <img class="contacts-icon" src="./assets/icons/clock.svg" alt="">
+                        <span>Mon–Sat: 9:00–23:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
