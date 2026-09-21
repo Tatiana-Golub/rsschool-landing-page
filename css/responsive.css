@@ -15,7 +15,9 @@
         letter-spacing: 0.005em;
     }
 
-    .section-title {
+    .section-title,
+    .footer__title,
+    .footer__subtitle {
         font-size: 3.75rem;
     }
 
@@ -49,6 +51,11 @@
     .app-buttons {
         flex-direction: row;
     }
+
+    .footer__container {
+        padding-block: 100px;
+        padding-inline: clamp(3.75rem, 0.893rem + 5.952vw, 6.25rem);
+    }
 }
 
 @media (min-width: 810px) {
@@ -63,6 +70,11 @@
     .gallery__image--small {
         display: block;
         height: 430px;
+    }
+
+    .footer__container {
+        flex-direction: row;
+        align-items: center;
     }
 }
 
@@ -93,7 +105,14 @@
         display: flex;
         align-items: center;
         gap: 8px;
+        height: 28px;
         font-weight: 600;
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.3s ease;
+    }
+
+    .menu-link:hover {
+        border-color: var(--color-text-primary);
     }
 
     .menu__cup-icon {

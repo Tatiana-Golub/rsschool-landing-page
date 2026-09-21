@@ -17,9 +17,27 @@
   max-width: 1440px;
 }
 
-.main {
+.main,
+.footer {
   max-width: 1440px;
   margin-inline: auto;
   width: 100%;
   padding-inline: clamp(1rem, -0.469rem + 6.186vw, 2.5rem);
+}
+
+.footer {
+  margin-bottom: 40px;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(2.5rem, -1.173rem + 15.464vw, 6.25rem);
+  background-color: var(--color-border-inverse);
+  color: var(--color-background);
+  border-radius: 40px;
+  max-width: 1440px;
+  padding-block: clamp(3.75rem, 2.854rem + 3.774vw, 6.25rem); 
+  padding-inline: clamp(1rem, -1.693rem + 11.34vw, 3.75rem);
 }
