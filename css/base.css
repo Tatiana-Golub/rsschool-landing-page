@@ -1,0 +1,73 @@
+:root {
+  --color-background-page: #E1D4C9;
+  --color-background-container: #665F55;
+  --color-background-overlay: #403F3DCC;
+  --color-text-primary: #403F3D;
+  --color-text-inverse: #E1D4C9;
+  --color-text-accent: #B0907A;
+  --color-border-primary: #C1B6AD;
+  --color-border-inverse: #665F55;
+
+  --font-main: "Inter", sans-serif;
+}
+
+:root[theme='dark'] {
+  --color-background-page: #292826;
+  --color-background-container: #403F3D;
+  --color-background-overlay: #292826CC;
+  --color-text-primary: #E1D4C9;
+  --color-text-inverse: #E1D4C9;
+  --color-text-accent: #B0907A;
+  --color-border-primary: #665F55;
+  --color-border-inverse: #C1B6AD;
+
+  --font-main: "Inter", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html:has(dialog[open]) {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  background-color: var(--color-background-page);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
