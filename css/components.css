@@ -63,33 +63,33 @@
 }
 
 .theme-switcher__button--sun {
-    color: var(--color-text-inverse);
-    background-color: var(--color-text-accent);
+  color: var(--color-text-inverse);
+  background-color: var(--color-text-accent);
 }
 
 .theme-switcher__button--moon {
-    color: var(--color-text-primary);
-    background-color: transparent;
+  color: var(--color-text-primary);
+  background-color: transparent;
 }
 
 .theme-switcher__button--moon:hover {
-    color: var(--color-text-inverse);
-    background-color: var(--color-border-inverse);
+  color: var(--color-text-inverse);
+  background-color: var(--color-border-inverse);
 }
 
 :root[theme='dark'] .theme-switcher__button--sun {
-    color: var(--color-text-primary);
-    background-color: transparent;
+  color: var(--color-text-primary);
+  background-color: transparent;
 }
 
 :root[theme='dark'] .theme-switcher__button--moon {
-    color: var(--color-text-inverse);
-    background-color: var(--color-text-accent);
+  color: var(--color-text-inverse);
+  background-color: var(--color-text-accent);
 }
 
 :root[theme='dark'] .theme-switcher__button--sun:hover {
-    color: var(--color-text-primary);
-    background-color: var(--color-background-container);
+  color: var(--color-text-primary);
+  background-color: var(--color-background-container);
 }
 
 .burger {
@@ -117,10 +117,28 @@
 }
 
 /* ================= MAIN PAGE ================= */
+
 .hero__container {
+  position: relative;
+  overflow: hidden;
   border-radius: 40px;
-  background: url("../assets/images/img-hero.png") center center/cover no-repeat;
   display: flex;
+}
+
+.hero__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(64, 63, 61, 0.35);
+  z-index: -1;
 }
 
 .hero__content {
@@ -568,6 +586,11 @@
   border: 1px solid var(--color-border-primary);
   border-radius: 40px;
   color: var(--color-text-primary);
+  transition: transform 0.6s ease;
+}
+
+.menu-card:hover {
+  transform: scale(0.9);
 }
 
 .menu-card__image {

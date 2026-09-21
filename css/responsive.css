@@ -137,3 +137,13 @@
         flex-direction: row;
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .hero__video {
+        display: none;
+    }
+
+    .hero__container {
+        background: url("../assets/images/img-hero.png") center/cover no-repeat;
+    }
+}
