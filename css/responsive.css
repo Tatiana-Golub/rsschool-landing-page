@@ -80,14 +80,38 @@
 
 @media (min-width: 960px) {
     .navigation__list {
+        position: static;
+        width: auto;
+        height: auto;
+        padding: 0;
+        overflow: visible;
+        flex-direction: row;
+        gap: 40px;
+        transform: none;
+        visibility: visible;
+    }
+
+    .navigation__item--menu {
+        display: none;
+    }
+
+    .navigation__link {
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 40px;
+        height: 28px;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.5;
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.3s ease;
     }
 
     .burger {
         display: none;
+    }
+
+    .menu-open {
+        overflow: auto;
     }
 
     .theme-switcher {
@@ -113,7 +137,7 @@
     }
 
     .menu-link:hover,
-    .menu__link--active {
+    .menu-link--active {
         border-color: var(--color-text-primary);
     }
 

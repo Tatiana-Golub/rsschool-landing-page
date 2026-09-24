@@ -9,22 +9,69 @@
 }
 
 .navigation__list {
-  display: none;
+  position: fixed;
+  top: 98px;
+  right: 0;
+  width: 100%;
+  height: calc(100dvh - 98px);
+  padding-block: clamp(3.75rem, -6.166rem + 41.753vw, 13.875rem);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: safe center;
+  gap: 60px;
   color: var(--color-text-primary);
+  background-color: var(--color-background-page);
+  transform: translateX(100%);
+  visibility: hidden;
+  transition:
+    transform 0.4s ease,
+    visibility 0.4s;
+  z-index: 1;
+}
+
+.navigation__list--open {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.navigation__item--menu {
+  margin-top: 40px;
+}
+
+.navigation__link--menu {
+  gap: 16px;
+}
+
+.navigation__link--menu:hover,
+.navigation__link--menu--active {
+  border-color: var(--color-text-primary);
+}
+
+.navigation__icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.navigation__icon path {
+  stroke-width: 1;
 }
 
 .navigation__link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  height: 28px;
-  font-size: 1rem;
+  height: 40px;
+  font-size: 2rem;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.25;
   border-bottom: 2px solid transparent;
   transition: border-color 0.3s ease;
 }
 
-.navigation__link:hover {
+.navigation__link:hover,
+.navigation__link[aria-current='page'] {
   border-color: var(--color-text-primary);
 }
 
@@ -94,22 +141,57 @@
 
 .burger {
   display: flex;
-  flex-direction: column;
   width: 44px;
   height: 44px;
+  padding: 0;
   background: none;
   border: 1px solid var(--color-border-inverse);
   border-radius: 50%;
   cursor: pointer;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+}
+
+.burger__inner {
+  position: relative;
+  width: 16px;
+  height: 8px;
 }
 
 .burger__line {
+  position: absolute;
+  right: 0;
   width: 16px;
-  height: 2px;
+  height: 1px;
   background-color: var(--color-text-primary);
+  border-radius: 1px;
+  transition:
+    transform 0.35s ease,
+    top 0.35s ease,
+    width 0.35s ease;
+  transform-origin: center;
+}
+
+.burger__line:first-child {
+  top: 0;
+}
+
+.burger__line:last-child {
+  bottom: 0;
+}
+
+.burger--active .burger__line:first-child {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.burger--active .burger__line:last-child {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.menu-open {
+  overflow: hidden;
 }
 
 .menu-link {
