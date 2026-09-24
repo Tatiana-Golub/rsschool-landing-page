@@ -5,7 +5,7 @@ export function initBurgerMenu() {
     if (!burger || !nav) return;
 
     const links = nav.querySelectorAll('.navigation__link');
-    const desktopQuery = window.matchMedia('(min-width: 960px)');
+    const desktopQuery = window.matchMedia('(min-width: 769px)');
 
     function setMenu(isOpen) {
         burger.classList.toggle('burger--active', isOpen);
@@ -25,9 +25,11 @@ export function initBurgerMenu() {
     });
 
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') setMenu(false);
+        if (e.key === 'Escape' && burger.classList.contains('burger--active')) {
+            setMenu(false);
+            burger.focus();
+        }
     });
-
     desktopQuery.addEventListener('change', (e) => {
         if (e.matches) setMenu(false);
     });

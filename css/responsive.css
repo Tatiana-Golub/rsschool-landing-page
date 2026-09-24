@@ -1,8 +1,4 @@
 @media (min-width: 768px) {
-    .header__actions {
-        margin-left: 2.75rem;
-    }
-
     .hero__content {
         margin-inline: clamp(3.75rem, 0.893rem + 5.952vw, 6.25rem);
     }
@@ -58,27 +54,11 @@
     }
 }
 
-@media (min-width: 810px) {
-    .gallery {
-        flex-direction: row;
+@media (min-width: 769px) {
+    .header__container {
+        gap: clamp(0rem, -2.865rem + 5.961vw, 2.5rem);
     }
 
-    .gallery__column {
-        width: calc((100% - 40px) / 2);
-    }
-
-    .gallery__image--small {
-        display: block;
-        height: 430px;
-    }
-
-    .footer__container {
-        flex-direction: row;
-        align-items: center;
-    }
-}
-
-@media (min-width: 960px) {
     .navigation__list {
         position: static;
         width: auto;
@@ -86,7 +66,7 @@
         padding: 0;
         overflow: visible;
         flex-direction: row;
-        gap: 40px;
+        gap: clamp(1.25rem, -0.183rem + 2.981vw, 2.5rem);
         transform: none;
         visibility: visible;
     }
@@ -96,22 +76,17 @@
     }
 
     .navigation__link {
-        display: flex;
-        align-items: center;
         height: 28px;
         font-size: 1rem;
-        font-weight: 600;
         line-height: 1.5;
-        border-bottom: 2px solid transparent;
-        transition: border-color 0.3s ease;
     }
 
     .burger {
         display: none;
     }
 
-    .menu-open {
-        overflow: auto;
+    .header__actions {
+        margin-left: clamp(0rem, -3.152rem + 6.557vw, 2.75rem);
     }
 
     .theme-switcher {
@@ -140,11 +115,25 @@
     .menu-link--active {
         border-color: var(--color-text-primary);
     }
+}
 
-    .menu__cup-icon {
-        width: 20px;
-        height: 20px;
-        color: var(--color-text-primary);
+@media (min-width: 810px) {
+    .gallery {
+        flex-direction: row;
+    }
+
+    .gallery__column {
+        width: calc((100% - 40px) / 2);
+    }
+
+    .gallery__image--small {
+        display: block;
+        height: 430px;
+    }
+
+    .footer__container {
+        flex-direction: row;
+        align-items: center;
     }
 }
 

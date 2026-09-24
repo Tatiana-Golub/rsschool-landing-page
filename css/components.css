@@ -78,7 +78,7 @@
 .header__actions {
   display: flex;
   align-items: center;
-  gap: clamp(0.75rem, 0.015rem + 3.093vw, 1.5rem);
+  gap: 24px;
 }
 
 .theme-switcher {
@@ -167,8 +167,7 @@
   border-radius: 1px;
   transition:
     transform 0.35s ease,
-    top 0.35s ease,
-    width 0.35s ease;
+    top 0.35s ease;
   transform-origin: center;
 }
 
@@ -177,7 +176,7 @@
 }
 
 .burger__line:last-child {
-  bottom: 0;
+  top: calc(100% - 1px);
 }
 
 .burger--active .burger__line:first-child {
