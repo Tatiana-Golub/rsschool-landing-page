@@ -150,7 +150,8 @@
                         </svg>
                     </button>
                 </div>
-                <button class="burger header__burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navigation-list">
+                <button class="burger header__burger" type="button" aria-label="Open menu" aria-expanded="false"
+                    aria-controls="navigation-list">
                     <span class="burger__inner">
                         <span class="burger__line"></span>
                         <span class="burger__line"></span>
@@ -190,7 +191,8 @@
                         <span class="accent">amazing surprise</span>
                     </h1>
                     <div class="menu__categories">
-                        <button class="category-button" type="button">
+                        <button class="category-button category-button--active" type="button" data-category="coffee"
+                            aria-pressed="true">
                             <span class="category-button__content">
                                 <span class="icon-wrapper">
                                     <img src="./assets/icons/coffee.png" alt="">
@@ -199,7 +201,7 @@
                             </span>
                         </button>
 
-                        <button class="category-button category-button--active" type="button">
+                        <button class="category-button" type="button" data-category="tea" aria-pressed="false">
                             <span class="category-button__content">
                                 <span class="icon-wrapper">
                                     <img src="./assets/icons/tea.png" alt="">
@@ -208,7 +210,7 @@
                             </span>
                         </button>
 
-                        <button class="category-button" type="button">
+                        <button class="category-button" type="button" data-category="dessert" aria-pressed="false">
                             <span class="category-button__content">
                                 <span class="icon-wrapper">
                                     <img src="./assets/icons/dessert.png" alt="">
@@ -220,60 +222,16 @@
                 </div>
 
                 <div class="menu__grid">
-                    <article class="menu-card">
-                        <img class="menu-card__image" src="./assets/images/tea-1.png" alt="Moroccan tea">
-                        <div class="menu-card__content">
-                            <div class="menu-card__info">
-                                <h2 class="menu-card__title">Moroccan</h2>
-                                <p class="menu-card__description">
-                                    Fragrant black tea with the addition of tangerine,
-                                    cinnamon, honey, lemon and mint
-                                </p>
-                            </div>
-                            <p class="menu-card__price">$4.50</p>
-                        </div>
-                    </article>
-                    <article class="menu-card">
-                        <img class="menu-card__image" src="./assets/images/tea-2.png" alt="Ginger tea">
-                        <div class="menu-card__content">
-                            <div class="menu-card__info">
-                                <h2 class="menu-card__title">Ginger</h2>
-                                <p class="menu-card__description">
-                                    Original black tea with fresh ginger,
-                                    lemon and honey
-                                </p>
-                            </div>
-                            <p class="menu-card__price">$5.00</p>
-                        </div>
-                    </article>
-                    <article class="menu-card">
-                        <img class="menu-card__image" src="./assets/images/tea-3.png" alt="Cranberry tea">
-                        <div class="menu-card__content">
-                            <div class="menu-card__info">
-                                <h2 class="menu-card__title">Cranberry</h2>
-                                <p class="menu-card__description">
-                                    Invigorating black tea with cranberry and honey
-                                </p>
-                            </div>
-                            <p class="menu-card__price">$5.00</p>
-                        </div>
-                    </article>
-                    <article class="menu-card">
-                        <div class="menu-card__image">
-                            <img class="menu-card__image" src="./assets/images/tea-4.png" alt="Sea buckthorn tea">
-                        </div>
-                        <div class="menu-card__content">
-                            <div class="menu-card__info">
-                                <h2 class="menu-card__title">Sea buckthorn</h2>
-                                <p class="menu-card__description">
-                                    Toning sweet black tea with sea buckthorn,
-                                    fresh thyme and cinnamon
-                                </p>
-                            </div>
-                            <p class="menu-card__price">$5.50</p>
-                        </div>
-                    </article>
                 </div>
+                <button class="menu__more" type="button" aria-label="Show more" hidden>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.8883 13.5C21.1645 18.3113 17.013 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C16.1006 2 19.6248 4.46819 21.1679 8"
+                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M17 8H21.4C21.7314 8 22 7.73137 22 7.4V3" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
             </div>
         </section>
     </main>
@@ -351,6 +309,7 @@
         </div>
     </footer>
     <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/pages/menu.js"></script>
     <script type="module" src="main.js"></script>
 </body>
 

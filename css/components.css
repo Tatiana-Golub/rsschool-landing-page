@@ -601,6 +601,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding-bottom: 40px;
 }
 
 .menu__header {
@@ -671,7 +672,6 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
-  margin-bottom: 100px;
 }
 
 .menu-card {
@@ -724,4 +724,31 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+}
+
+.menu__more {
+  align-self: center;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border-inverse);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.menu__more:hover {
+  background-color: var(--color-background-container);
+  color: var(--color-text-inverse);
+}
+
+.menu__more[hidden] {
+  display: none;
 }
