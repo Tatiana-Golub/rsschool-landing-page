@@ -150,7 +150,8 @@
                         </svg>
                     </button>
                 </div>
-                <button class="burger header__burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navigation-list">
+                <button class="burger header__burger" type="button" aria-label="Open menu" aria-expanded="false"
+                    aria-controls="navigation-list">
                     <span class="burger__inner">
                         <span class="burger__line"></span>
                         <span class="burger__line"></span>
@@ -239,25 +240,65 @@
                                 stroke-linejoin="round" />
                         </svg>
                     </button>
-                    <article class="coffee-card">
-                        <div class="coffee-card__image-wrapper">
-                            <img class="coffee-card__image" src="./assets/images/s'mores_frappuccino.png"
-                                alt="S'mores Frappuccino">
+                    <div class="slider__viewport">
+                        <div class="slider__track">
+                            <article class="coffee-card slider__slide">
+                                <div class="coffee-card__image-wrapper">
+                                    <img class="coffee-card__image" src="./assets/images/coffee-slider-1.png"
+                                        alt="S'mores Frappuccino">
+                                </div>
+                                <div class="coffee-card__content">
+                                    <h3 class="coffee-card__title">
+                                        S'mores Frappuccino
+                                    </h3>
+                                    <p class="coffee-card__description">
+                                        This new drink takes an espresso and mixes it
+                                        with brown sugar and cinnamon before being
+                                        topped with oat milk.
+                                    </p>
+                                    <p class="coffee-card__price">
+                                        $5.50
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="coffee-card slider__slide">
+                                <div class="coffee-card__image-wrapper">
+                                    <img class="coffee-card__image" src="./assets/images/coffee-slider-2.png"
+                                        alt="Caramel Macchiato">
+                                </div>
+                                <div class="coffee-card__content">
+                                    <h3 class="coffee-card__title">
+                                        Caramel Macchiato
+                                    </h3>
+                                    <p class="coffee-card__description">
+                                        Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream
+                                        under whipped thick foam.
+                                    </p>
+                                    <p class="coffee-card__price">
+                                        $5.00
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="coffee-card slider__slide">
+                                <div class="coffee-card__image-wrapper">
+                                    <img class="coffee-card__image" src="./assets/images/coffee-slider-3.png"
+                                        alt="Ice coffee">
+                                </div>
+                                <div class="coffee-card__content">
+                                    <h3 class="coffee-card__title">
+                                        Ice coffee
+                                    </h3>
+                                    <p class="coffee-card__description">
+                                        A popular summer drink that tones and invigorates. Prepared from coffee, milk
+                                        and ice.
+                                    </p>
+                                    <p class="coffee-card__price">
+                                        $4.50
+                                    </p>
+                                </div>
+                            </article>
                         </div>
-                        <div class="coffee-card__content">
-                            <h3 class="coffee-card__title">
-                                S'mores Frappuccino
-                            </h3>
-                            <p class="coffee-card__description">
-                                This new drink takes an espresso and mixes it
-                                with brown sugar and cinnamon before being
-                                topped with oat milk.
-                            </p>
-                            <p class="coffee-card__price">
-                                $5.50
-                            </p>
-                        </div>
-                    </article>
+                    </div>
                     <button class="slider__button slider__button--next" type="button" aria-label="Next coffee">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6 12H18.5M12.5 18L18.5 12L12.5 6" stroke="currentColor" stroke-linecap="round"
@@ -267,7 +308,7 @@
                     </button>
                 </div>
                 <div class="slider__pagination">
-                    <button class="slider__dot slider__dot--active" type="button" aria-label="Slide 1"></button>
+                    <button class="slider__dot" type="button" aria-label="Slide 1"></button>
                     <button class="slider__dot" type="button" aria-label="Slide 2"></button>
                     <button class="slider__dot" type="button" aria-label="Slide 3"></button>
                 </div>
@@ -433,6 +474,7 @@
         </div>
     </footer>
     <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/pages/home.js"></script>
     <script type="module" src="main.js"></script>
 </body>
 

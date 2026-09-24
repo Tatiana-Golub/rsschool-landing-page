@@ -159,4 +159,8 @@
     .hero__container {
         background: url("../assets/images/img-hero.png") center/cover no-repeat;
     }
+
+    .slider__track {
+        transition: none;
+    }
 }
