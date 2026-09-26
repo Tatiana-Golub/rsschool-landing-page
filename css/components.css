@@ -759,7 +759,7 @@
   padding: 16px;
   border: none;
   border-radius: 40px;
-  background-color: var(--color-background-page);
+  background-color: var(--color-background-modal);
   color: var(--color-text-primary);
 }
 

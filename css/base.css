@@ -2,6 +2,7 @@
   --color-background-page: #E1D4C9;
   --color-background-container: #665F55;
   --color-background-overlay: #403F3DCC;
+  --color-background-modal:  #E1D4C9;
   --color-text-primary: #403F3D;
   --color-text-inverse: #E1D4C9;
   --color-text-accent: #B0907A;
@@ -15,6 +16,7 @@
   --color-background-page: #292826;
   --color-background-container: #403F3D;
   --color-background-overlay: #292826CC;
+  --color-background-modal: #403F3D;
   --color-text-primary: #E1D4C9;
   --color-text-inverse: #E1D4C9;
   --color-text-accent: #B0907A;
