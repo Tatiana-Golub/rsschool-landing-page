@@ -764,7 +764,7 @@
 }
 
 .product-modal::backdrop {
-  background-color: color-mix(in srgb, #000000 60%, transparent);
+  background-color: var(--color-background-overlay);
 }
 
 .product-modal[open] {
