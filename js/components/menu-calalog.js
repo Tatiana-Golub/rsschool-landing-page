@@ -1,3 +1,5 @@
+import { initProductModal, openProductModal } from './productModal.js';
+
 const PRODUCTS_URL = './data/products.json';
 
 const VISIBLE_COUNT = { wide: 8, narrow: 4 };
@@ -11,10 +13,15 @@ function createElement(tag, className, text) {
 }
 
 function createCard(product, number) {
+    const imageSrc = product.image ?? `./assets/images/${product.category}-${number}.png`;
+
     const card = createElement('article', 'menu-card');
+    card.tabIndex = 0;
+    card.setAttribute('role', 'button');
+    card.setAttribute('aria-label', `View details for ${product.name}`);
 
     const image = createElement('img', 'menu-card__image');
-    image.src = product.image ?? `./assets/images/${product.category}-${number}.png`;
+    image.src = imageSrc;
     image.alt = product.name;
 
     const info = createElement('div', 'menu-card__info');
@@ -30,6 +37,15 @@ function createCard(product, number) {
     );
 
     card.append(image, content);
+
+    card.addEventListener('click', () => openProductModal(product, imageSrc));
+    card.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            openProductModal(product, imageSrc);
+        }
+    });
+
     return card;
 }
 
@@ -39,6 +55,8 @@ export async function initMenuCatalog() {
     const categoryButtons = [...document.querySelectorAll('.category-button')];
 
     if (!grid || !moreButton || categoryButtons.length === 0) return;
+
+    initProductModal();
 
     let products;
 
