@@ -864,12 +864,12 @@
 
 .product-modal__option--active {
   border-color: transparent;
-  background-color: var(--color-background-container);
+  background-color: var(--color-background-modal-control);
   color: var(--color-text-inverse);
 }
 
 .product-modal__option--active .product-modal__option-badge {
-  background-color: var(--color-background-page);
+  background-color: var(--color-background-modal);
   color: var(--color-text-primary);
 }
 

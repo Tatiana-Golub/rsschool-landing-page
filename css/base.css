@@ -3,6 +3,7 @@
   --color-background-container: #665F55;
   --color-background-overlay: #403F3DCC;
   --color-background-modal:  #E1D4C9;
+  --color-background-modal-control: #665F55; 
   --color-text-primary: #403F3D;
   --color-text-inverse: #E1D4C9;
   --color-text-accent: #B0907A;
@@ -17,6 +18,7 @@
   --color-background-container: #403F3D;
   --color-background-overlay: #292826CC;
   --color-background-modal: #403F3D;
+  --color-background-modal-control: #292826; 
   --color-text-primary: #E1D4C9;
   --color-text-inverse: #E1D4C9;
   --color-text-accent: #B0907A;
