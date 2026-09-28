@@ -3,7 +3,7 @@ import { initProductModal, openProductModal } from './productModal.js';
 const PRODUCTS_URL = './data/products.json';
 
 const VISIBLE_COUNT = { wide: 8, narrow: 4 };
-const wideQuery = window.matchMedia('(min-width: 768px)');
+const wideQuery = window.matchMedia('(min-width: 769px)');
 
 function createElement(tag, className, text) {
     const element = document.createElement(tag);
