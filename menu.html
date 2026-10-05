@@ -19,7 +19,7 @@
 
 <body>
     <!-- ================= HEADER ================= -->
-<header class="header">
+    <header class="header">
         <div class="container header__container">
             <a class="logo" href="index.html">
                 <svg width="100" height="60" viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,7 +86,7 @@
                 </svg>
             </a>
             <nav class="navigation">
-                <ul class="navigation__list">
+                <ul class="navigation__list" id="navigation-list">
                     <li class="navigation__item">
                         <a class="navigation__link" href="index.html#favorite">
                             Favorite coffee
@@ -105,6 +105,30 @@
                     <li class="navigation__item">
                         <a class="navigation__link" href="#contacts">
                             Contact us
+                        </a>
+                    </li>
+                    <li class="navigation__item navigation__item--menu">
+                        <a class="navigation__link navigation__link--menu" href="menu.html" aria-current="page">
+                            <span>Menu</span>
+                            <svg width="40" height="40" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.166 9.76667V11.6667C14.166 14.8883 11.5543 17.5 8.33268 17.5C5.11102 17.5 2.49935 14.8883 2.49935 11.6667V9.76667C2.49935 9.4353 2.76798 9.16667 3.09935 9.16667H13.566C13.8974 9.16667 14.166 9.4353 14.166 9.76667Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M9.99935 7.49996C9.99935 6.66663 10.5946 5.83329 11.7851 5.83329C13.1 5.83329 14.166 4.7673 14.166 3.45234V2.91663"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.66732 7.5V7.08333C6.66732 5.70262 7.78661 4.58333 9.16732 4.58333C10.0878 4.58333 10.834 3.83714 10.834 2.91667V2.5"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M13.334 9.16663H15.4173C16.5679 9.16663 17.5007 10.0994 17.5007 11.25C17.5007 12.4006 16.5679 13.3333 15.4173 13.3333H14.1673"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
                         </a>
                     </li>
                 </ul>
@@ -126,11 +150,14 @@
                         </svg>
                     </button>
                 </div>
-                <button class="burger header__burger" type="button">
-                    <span class="burger__line"></span>
-                    <span class="burger__line"></span>
+                <button class="burger header__burger" type="button" aria-label="Open menu" aria-expanded="false"
+                    aria-controls="navigation-list">
+                    <span class="burger__inner">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                    </span>
                 </button>
-                <a class="menu-link menu__link--active" href="menu.html">
+                <a class="menu-link menu-link--active" href="menu.html">
                     <span>Menu</span>
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -164,7 +191,8 @@
                         <span class="accent">amazing surprise</span>
                     </h1>
                     <div class="menu__categories">
-                        <button class="category-button" type="button">
+                        <button class="category-button category-button--active" type="button" data-category="coffee"
+                            aria-pressed="true">
                             <span class="category-button__content">
                                 <span class="icon-wrapper">
                                     <img src="./assets/icons/coffee.png" alt="">
@@ -173,7 +201,7 @@
                             </span>
                         </button>
 
-                        <button class="category-button category-button--active" type="button">
+                        <button class="category-button" type="button" data-category="tea" aria-pressed="false">
                             <span class="category-button__content">
                                 <span class="icon-wrapper">
                                     <img src="./assets/icons/tea.png" alt="">
@@ -182,7 +210,7 @@
                             </span>
                         </button>
 
-                        <button class="category-button" type="button">
+                        <button class="category-button" type="button" data-category="dessert" aria-pressed="false">
                             <span class="category-button__content">
                                 <span class="icon-wrapper">
                                     <img src="./assets/icons/dessert.png" alt="">
@@ -194,60 +222,16 @@
                 </div>
 
                 <div class="menu__grid">
-                    <article class="menu-card">
-                        <img class="menu-card__image" src="./assets/images/tea-1.png" alt="Moroccan tea">
-                        <div class="menu-card__content">
-                            <div class="menu-card__info">
-                                <h2 class="menu-card__title">Moroccan</h2>
-                                <p class="menu-card__description">
-                                    Fragrant black tea with the addition of tangerine,
-                                    cinnamon, honey, lemon and mint
-                                </p>
-                            </div>
-                            <p class="menu-card__price">$4.50</p>
-                        </div>
-                    </article>
-                    <article class="menu-card">
-                        <img class="menu-card__image" src="./assets/images/tea-2.png" alt="Ginger tea">
-                        <div class="menu-card__content">
-                            <div class="menu-card__info">
-                                <h2 class="menu-card__title">Ginger</h2>
-                                <p class="menu-card__description">
-                                    Original black tea with fresh ginger,
-                                    lemon and honey
-                                </p>
-                            </div>
-                            <p class="menu-card__price">$5.00</p>
-                        </div>
-                    </article>
-                    <article class="menu-card">
-                        <img class="menu-card__image" src="./assets/images/tea-3.png" alt="Cranberry tea">
-                        <div class="menu-card__content">
-                            <div class="menu-card__info">
-                                <h2 class="menu-card__title">Cranberry</h2>
-                                <p class="menu-card__description">
-                                    Invigorating black tea with cranberry and honey
-                                </p>
-                            </div>
-                            <p class="menu-card__price">$5.00</p>
-                        </div>
-                    </article>
-                    <article class="menu-card">
-                        <div class="menu-card__image">
-                            <img class="menu-card__image" src="./assets/images/tea-4.png" alt="Sea buckthorn tea">
-                        </div>
-                        <div class="menu-card__content">
-                            <div class="menu-card__info">
-                                <h2 class="menu-card__title">Sea buckthorn</h2>
-                                <p class="menu-card__description">
-                                    Toning sweet black tea with sea buckthorn,
-                                    fresh thyme and cinnamon
-                                </p>
-                            </div>
-                            <p class="menu-card__price">$5.50</p>
-                        </div>
-                    </article>
                 </div>
+                <button class="menu__more" type="button" aria-label="Show more" hidden>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.8883 13.5C21.1645 18.3113 17.013 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C16.1006 2 19.6248 4.46819 21.1679 8"
+                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M17 8H21.4C21.7314 8 22 7.73137 22 7.4V3" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
             </div>
         </section>
     </main>
@@ -307,7 +291,8 @@
                     Contact us
                 </h2>
                 <div class="contacts-list">
-                    <a class="contacts-item contacts-item--link" href="https://maps.app.goo.gl/XmhVyZSKtxiTYoj46" target="_blank">
+                    <a class="contacts-item contacts-item--link" href="https://maps.app.goo.gl/XmhVyZSKtxiTYoj46"
+                        target="_blank">
                         <img class="contacts-icon" src="./assets/icons/location.svg" alt="">
                         <span>8558 Green Rd., LA</span>
                     </a>
@@ -323,7 +308,8 @@
             </div>
         </div>
     </footer>
-    <script type="module" src="main.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/pages/menu.js"></script>
 </body>
 
 </html>
