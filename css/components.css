@@ -693,11 +693,6 @@
   border: 1px solid var(--color-border-primary);
   border-radius: 40px;
   color: var(--color-text-primary);
-  transition: transform 0.6s ease;
-}
-
-.menu-card:hover {
-  transform: scale(0.9);
 }
 
 .menu-card__image {
@@ -706,6 +701,27 @@
   flex-shrink: 0;
   border-radius: 40px;
   object-fit: cover;
+  object-position: center;
+  transition: transform 0.6s ease;
+}
+
+.menu-card:hover .menu-card__image,
+.menu-card:focus-visible .menu-card__image {
+  transform: scale(0.95);
+}
+
+@supports (object-view-box: inset(5%)) {
+  .menu-card__image {
+    transform: none;
+    object-view-box: inset(5%);
+    transition: object-view-box 0.3s ease-in-out;
+  }
+
+  .menu-card:hover .menu-card__image,
+  .menu-card:focus-visible .menu-card__image {
+    transform: none;
+    object-view-box: inset(0%);
+  }
 }
 
 .menu-card__content {
