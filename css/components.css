@@ -308,9 +308,9 @@
 
 .slider__viewport {
   flex: 0 1 480px;
-  min-width: 0;      
+  min-width: 0;
   overflow: hidden;
-  touch-action: pan-y; 
+  touch-action: pan-y;
 }
 
 .slider__track {
@@ -784,8 +784,15 @@
 }
 
 @keyframes modal-in {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .product-modal__body {
@@ -898,53 +905,53 @@
 }
 
 .product-modal__disclaimer {
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-    padding-block: 12px;
-    border-top: 1px solid var(--color-border-primary);
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding-block: 12px;
+  border-top: 1px solid var(--color-border-primary);
 }
 
 .product-modal__disclaimer-icon {
-    flex: 0 0 16px;
-    width: 16px;
-    height: 16px;
-    color: var(--color-text-primary);
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+  color: var(--color-text-primary);
 }
 
 .product-modal__disclaimer-icon svg {
-    display: block;
-    width: 16px;
-    height: 16px;
+  display: block;
+  width: 16px;
+  height: 16px;
 }
 
 .product-modal__disclaimer-text {
-    flex: 1;
-    margin: 0;
-    color: var(--color-text-primary);
-    font-size: 0.6rem;
-    font-weight: 600;
-    line-height: 14px;
+  flex: 1;
+  margin: 0;
+  color: var(--color-text-primary);
+  font-size: 0.6rem;
+  font-weight: 600;
+  line-height: 14px;
 }
 
 .product-modal__close {
-    width: 100%;
-    padding-block: 9px;
-    border: 1px solid var(--color-border-inverse);
-    border-radius: 100px;
-    background-color: transparent;
-    color: var(--color-text-primary);
-    font-family: var(--font-main);
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.5;
-    cursor: pointer;
-    transition:
-        background-color 0.3s ease,
-        color 0.3s ease;
+  width: 100%;
+  padding-block: 9px;
+  border: 1px solid var(--color-border-inverse);
+  border-radius: 100px;
+  background-color: transparent;
+  color: var(--color-text-primary);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .product-modal__close:hover {
-    background-color: var(--color-border-inverse);
-    color: var(--color-text-inverse);
+  background-color: var(--color-border-inverse);
+  color: var(--color-text-inverse);
 }
