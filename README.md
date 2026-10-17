@@ -9,8 +9,8 @@ The project is built using Vanilla JavaScript (ES Modules) without any framework
 
 <table>
   <tr>
-    <td><img src="assets/screenshots/home.png" width="100%"></td>
-    <td><img src="assets/screenshots/menu.png" width="100%"></td>
+    <td valign="top"><img src="assets/screenshots/home.png" width="100%"></td>
+    <td valign="top"><img src="assets/screenshots/menu.png" width="100%"></td>
   </tr>
 </table>
 
